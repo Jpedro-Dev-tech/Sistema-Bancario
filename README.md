@@ -10,6 +10,7 @@ Projeto desenvolvido com Java com o objetivo de simular operações básicas de 
 - Depositar valores
 - Sacar dinheiro
 - Consultar saldo
+- Fechar conta bancária
 
 ## Tecnologias Utilizadas
 
@@ -26,6 +27,7 @@ Este projeto foi criado para praticar conceitos importantes da programação, co
 - Estruturas de repetição
 - Condicionais
 - Organização de código
+
 
 
 ## Authors
