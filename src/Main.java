@@ -11,7 +11,8 @@
             System.out.println("3. Saldo");//ok
             System.out.println("4. Saque");//ok
             System.out.println("5. Depositar");//ok
-            System.out.println("0. Sair");
+            System.out.println("6. Fechar Conta"); // adicionando mais uma funcionalidade
+            System.out.println("0. Sair");//ok
             System.out.println("-------------------------");
             opcao = scanner.nextInt();
             scanner.nextLine();
@@ -105,6 +106,11 @@
                     double valor_depositado = scanner.nextDouble();
                     conta.depositar(valor_depositado);
                     System.out.println("valor atual da conta é " + conta.getSaldo());
+                    break;
+                    //Fechar Conta
+                case 6:
+                    System.out.println("Encerrar conta");
+                    conta.fecharConta();
                     break;
                 case 0:
                     System.out.println("Encerrando sistema...");

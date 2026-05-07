@@ -18,12 +18,17 @@ public class ContaBanco {
         }
     }
     public void fecharConta(){
+        if(isStatus() == true){
         if(getSaldo() > 0){
             System.out.println("Conta com saldo");
         }else if(getSaldo() < 0){
             System.out.println("Conta com saldo negativo");
-        }else{
+        }else {
             setStatus(false);
+            System.out.println("Conta encerrada");
+            }
+        }else{
+            System.out.println("Conta inativa");
         }
     }
     public void depositar(double valor){
